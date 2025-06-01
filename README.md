@@ -8,7 +8,9 @@ This project provides a Docker image for running the [gphotos-uploader-cli](http
 You can run the container with:
 
 ```sh
-docker run --rm -v /path/to/config:/config -v /path/to/photos:/photos:ro gphotos-uploader-docker
+docker run --rm -v /path/to/config:/config \
+       -v /path/to/photos:/photos:ro \
+       gphotos-uploader-docker
 ```
 
 Replace `/path/to/config` and `/path/to/photos` with your local directories.
